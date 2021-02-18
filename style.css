@@ -53,12 +53,18 @@ hr {
     right: 82px;
     top: 55px;  
 }
-
+/*
+.question-section {
+    width: 327px;
+    height: 64px;
+}
+*/
 .question {
     color: hsl(238, 29%, 16%);
     border: none;
     outline: none;
     background-color: white;
+    padding: 5px;
 }
 
 .question:hover {
@@ -68,9 +74,15 @@ hr {
 
 .answer {
     color: hsl(240, 6%, 50%);   
+    display: none;
+    overflow: hidden;
+    padding: 0 5px;
+    margin-top: 0;
 }
 
-
+.active {
+    font-weight: bold;
+}
 
 
 
