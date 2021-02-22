@@ -13,3 +13,17 @@ for (i = 0; i < accordian.length; i++) {
         }
     });
 }
+
+/*TRYING TO FLIP ARROW ON CLICK
+const flipArrow = document.getElementsByClassName("question-section");
+
+flipArrow.addEventListener("click", function() {
+    let carrot = document.getElementsByClassName("arrow"); 
+    if (carrot.style.display === "block") {
+        carrot.style.transform = "rotate(180deg)"; 
+    } else { 
+        carrot.style.transform = "rotate(180deg)"
+ }
+}
+)
+*/
