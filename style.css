@@ -17,11 +17,14 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+html, body {
+    overflow: hidden;
+}
+
 html {
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 100%;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -32,6 +35,8 @@ body {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
+    width: 60%; 
+    height: 60%;
 }
 
 h1 {
@@ -53,9 +58,7 @@ hr {
     text-align: left;
     font-family: 'Kumbh Sans';
     font-size: 1em;
-    height: 600px;
     display: flex;
-    justify-content: center;
     flex-direction: column; 
 }
 
@@ -90,17 +93,15 @@ hr {
 }
 
 /*SVG Graphics*/
+svg.arrow:hover {
+    cursor: pointer;
+}
 
-.arrow {
+#arrow1, #arrow2, #arrow3, #arrow4, #arrow5 {
     position: relative;
     bottom: 20px; 
     left: 530px; 
 }
-    
-.arrow:hover {
-    cursor: pointer;
-}
-
 
 /* Works Cited */
 .attribution { 

@@ -14,16 +14,51 @@ for (i = 0; i < accordian.length; i++) {
     });
 }
 
-/*TRYING TO FLIP ARROW ON CLICK
-const flipArrow = document.getElementsByClassName("question-section");
-
-flipArrow.addEventListener("click", function() {
-    let carrot = document.getElementsByClassName("arrow"); 
-    if (carrot.style.display === "block") {
-        carrot.style.transform = "rotate(180deg)"; 
-    } else { 
-        carrot.style.transform = "rotate(180deg)"
- }
+function flipArrow() {
+    let carrot = document.getElementById("arrow1");
+        if (carrot.style.transform === "rotate(0.5turn)") {
+            carrot.style.transform = "rotate(0turn)";
+        } else {
+            carrot.style.transform = "rotate(0.5turn)"; 
+        } 
 }
-)
-*/
+
+function flipArrow2() {
+    let carrot = document.getElementById("arrow2");
+        if (carrot.style.transform === "rotate(0.5turn)") {
+            carrot.style.transform = "rotate(0turn)";
+        } else {
+            carrot.style.transform = "rotate(0.5turn)"; 
+        } 
+}
+
+function flipArrow3() {
+    let carrot = document.getElementById("arrow3");
+        if (carrot.style.transform === "rotate(0.5turn)") {
+            carrot.style.transform = "rotate(0turn)";
+        } else {
+            carrot.style.transform = "rotate(0.5turn)"; 
+        } 
+}
+  
+function flipArrow4() {
+    let carrot = document.getElementById("arrow4");
+        if (carrot.style.transform === "rotate(0.5turn)") {
+            carrot.style.transform = "rotate(0turn)";
+        } else {
+            carrot.style.transform = "rotate(0.5turn)"; 
+        } 
+}
+
+function flipArrow5() {
+    let carrot = document.getElementById("arrow5");
+        if (carrot.style.transform === "rotate(0.5turn)") {
+            carrot.style.transform = "rotate(0turn)";
+        } else {
+            carrot.style.transform = "rotate(0.5turn)"; 
+        } 
+}
+ 
+
+
+
