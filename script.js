@@ -58,7 +58,3 @@ function flipArrow5() {
             carrot.style.transform = "rotate(0.5turn)"; 
         } 
 }
- 
-
-
-
