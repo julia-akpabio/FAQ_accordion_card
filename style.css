@@ -17,15 +17,12 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
-html, body {
-    overflow: hidden;
-}
-
 html {
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 body {
@@ -39,42 +36,60 @@ body {
     height: 60%;
 }
 
-h1 {
-    font-weight: 700;
-    width: fit-content;
-    padding: 5px;
-    position: relative;
-    left: 25px;
-}
-
-hr {
-    border-top: hsl(240, 5%, 91%);
-    width: 530px;
-    position: relative;
-    left: 5px;
-}
-
 .text {
     text-align: left;
     font-family: 'Kumbh Sans';
     font-size: 1em;
-    display: flex;
-    flex-direction: column; 
+    display: inline-grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    height: 100%;
+    width: 55%;
+    position: relative;
+    left: 550px;
+    border: 2px solid cadetblue;
 }
 
-.question-section {
-   margin: 5px 5px;
-   text-align: left;
-   margin-right: 15px;
-   width: 450px;
-   position: relative;
-   left: 15px; 
+h1 {
+    font-weight: 700;
+    grid-column: 1 / span 1;
+}
+
+hr {
+    border-top: hsl(240, 5%, 91%);
+}
+
+.question1 {
+    grid-column: 1;
+    grid-row: 2; 
+    height: 10%;
+}
+
+.question2 {
+    grid-column: 1;
+    grid-row: 3; 
+}
+
+.question3 {
+    grid-column: 1;
+    grid-row: 4; 
+}
+
+.question4 {
+    grid-column: 1;
+    grid-row: 5; 
+}
+
+.question5 {
+    grid-column: 1;
+    grid-row: 6; 
 }
 
 .question {
     color: hsl(237, 12%, 33%);
     background-color: white;
     border: none;
+    text-align: left;
 }
 
 .question:hover {
@@ -86,6 +101,7 @@ hr {
     color: hsl(240, 6%, 50%);   
     display: none;
     overflow: hidden;
+    text-align: left;
 }
 
 .active {
@@ -97,10 +113,29 @@ svg.arrow:hover {
     cursor: pointer;
 }
 
-#arrow1, #arrow2, #arrow3, #arrow4, #arrow5 {
-    position: relative;
-    bottom: 20px; 
-    left: 530px; 
+#arrow1 {
+    grid-column: 2; 
+    grid-row: 2;
+}
+
+#arrow2 {
+    grid-column: 2; 
+    grid-row: 3;
+}
+
+#arrow3 {
+    grid-column: 2; 
+    grid-row: 4;
+}
+
+#arrow4 {
+    grid-column: 2; 
+    grid-row: 5;
+}
+
+#arrow5 {
+    grid-column: 2; 
+    grid-row: 6;
 }
 
 /* Works Cited */
